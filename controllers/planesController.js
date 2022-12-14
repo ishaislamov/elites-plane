@@ -52,7 +52,7 @@ const createPlane = async (req, res) => {
     }
 
     if(Object.keys(errors).length > 0) {
-        return res.status(400).json(errors);
+        return res.status(400).json('ERROR WITH CREATING PLANE');
     }
   try {
     const { name, price, description, capacity } = req.body;
